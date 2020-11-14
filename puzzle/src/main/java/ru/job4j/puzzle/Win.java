@@ -6,9 +6,10 @@ public class Win {
         //boolean Horiz = Horizontal()
         //boolean Vert = Vertical();
         for (int i = 0; i < board.length; i++) {
+            if (board[i][i] == 1){
             if (Horizontal(board, i) || Vertical(board, i)) {
                 rsl = true;
-
+            }
             }
         }
 
